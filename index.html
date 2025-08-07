@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Karim Abdelrazek - Full Stack Web Developer | React, Node.js, JavaScript Expert</title>
+    <meta name="title" content="Karim Abdelrazek - Full Stack Web Developer | React, Node.js, JavaScript Expert">
+    <meta name="description" content="Professional full-stack web developer specializing in React, Node.js, and modern JavaScript. Creating responsive, accessible, and performant web applications. View my portfolio of e-commerce and task management projects.">
+    <meta name="keywords" content="web developer, full stack developer, React developer, Node.js developer, JavaScript developer, frontend developer, backend developer, portfolio, web applications, responsive design">
+    <meta name="author" content="Karim Abdelrazek">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Karim Abdelrazek - Full Stack Web Developer | React, Node.js, JavaScript Expert">
+    <meta property="og:description" content="Professional full-stack web developer specializing in React, Node.js, and modern JavaScript. Creating responsive, accessible, and performant web applications.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Karim Abdelrazek - Web Developer Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Karim Abdelrazek - Full Stack Web Developer | React, Node.js, JavaScript Expert">
+    <meta property="twitter:description" content="Professional full-stack web developer specializing in React, Node.js, and modern JavaScript. Creating responsive, accessible, and performant web applications.">
+    <meta property="twitter:image" content="https://yourdomain.com/images/twitter-image.jpg">
+    <meta property="twitter:creator" content="@yourtwitterhandle">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Karim Abdelrazek - Web Developer">
+    <meta name="application-name" content="Karim Abdelrazek - Web Developer Portfolio">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Karim Abdelrazek",
+      "jobTitle": "Full Stack Web Developer",
+      "description": "Professional full-stack web developer specializing in React, Node.js, and modern JavaScript",
+      "url": "https://yourdomain.com",
+      "sameAs": [
+        "https://github.com/yourusername",
+        "https://linkedin.com/in/yourusername",
+        "https://twitter.com/yourtwitterhandle"
+      ],
+      "knowsAbout": [
+        "React.js",
+        "Node.js", 
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Vue.js",
+        "Python",
+        "Web Development",
+        "Responsive Design"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "contact@example.com",
+        "telephone": "+1-555-123-4567"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Karim Abdelrazek - Web Developer Portfolio",
+      "url": "https://yourdomain.com",
+      "description": "Professional portfolio showcasing web development projects and skills",
+      "author": {
+        "@type": "Person",
+        "name": "Karim Abdelrazek"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yourdomain.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<body>
+    <!-- Skip to main content link (hidden until focused) -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with Navigation -->
+    <header class="main-header" role="banner">
+        <div class="container">
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home" class="logo" aria-label="Home">
+                    <span aria-hidden="true">Portfolio</span>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="primary-navigation" class="nav-links" role="menubar">
+                    <li role="none">
+                        <a href="#about" class="nav-link" role="menuitem" tabindex="0">
+                            <span class="nav-link-text">About</span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="#projects" class="nav-link" role="menuitem" tabindex="0">
+                            <span class="nav-link-text">Projects</span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="#skills" class="nav-link" role="menuitem" tabindex="0">
+                            <span class="nav-link-text">Skills</span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="#contact" class="btn btn-nav" role="menuitem" tabindex="0">
+                            <span>Contact Me</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" id="main">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="#home" aria-current="page">Home</a>
+                </li>
+            </ol>
+        </nav>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Hi, I'm <span class="highlight">Karim Abdelrazek</span></h1>
+                    <p class="hero-subtitle" role="doc-subtitle">Web Developer</p>
+                    <p class="hero-description">I build exceptional digital experiences that make people's lives easier.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" aria-label="View my projects">
+                            <span>View My Work</span>
+                            <span class="sr-only">, navigate to projects section</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Me</h2>
+                <div class="about-content" role="article">
+                    <p>I'm a passionate web developer with a keen eye for design and a commitment to creating accessible, performant, and responsive websites. With several years of experience in the field, I specialize in turning ideas into beautiful, functional web applications.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities. I believe in continuous learning and staying updated with the latest industry trends.</p>
+                    <div class="visually-hidden" aria-hidden="true">
+                        <p>This website has been built with accessibility in mind, following WCAG 2.1 AA standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-light" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                <p class="section-description" id="projects-description">A selection of my recent work. Each project includes a description, technologies used, and links to view the live site and source code.</p>
+                
+                <div class="projects-grid" role="list" aria-label="List of projects">
+                    <!-- Project 1 -->
+                    <article class="project-card" role="listitem" aria-labelledby="project-1-title" itemscope itemtype="https://schema.org/CreativeWork" data-category="fullstack">
+                        <meta itemprop="name" content="E-commerce Website">
+                        <meta itemprop="description" content="A fully responsive e-commerce platform built with React and Node.js, featuring product filtering, cart functionality, and secure checkout.">
+                        <meta itemprop="dateCreated" content="2023">
+                        <meta itemprop="genre" content="Web Application">
+                        
+                        <figure class="project-image">
+                            <img 
+                                src="https://via.placeholder.com/600x400" 
+                                alt="Screenshot of E-commerce Website showing product listings" 
+                                loading="lazy"
+                                width="600"
+                                height="400"
+                                itemprop="image"
+                            >
+                            <figcaption class="sr-only">Screenshot of E-commerce Website</figcaption>
+                        </figure>
+                        <div class="project-content">
+                            <h3 id="project-1-title" itemprop="name">E-commerce Website</h3>
+                            <p itemprop="description">A fully responsive e-commerce platform built with React and Node.js, featuring product filtering, cart functionality, and secure checkout.</p>
+                            <div class="project-tags" role="list" aria-label="Technologies used">
+                                <span role="listitem" itemprop="keywords">React</span>
+                                <span role="listitem" itemprop="keywords">Node.js</span>
+                                <span role="listitem" itemprop="keywords">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline" aria-label="View E-commerce Website project" itemprop="url">
+                                    <span>View Project</span>
+                                    <span class="sr-only">: E-commerce Website</span>
+                                </a>
+                                <a href="#" class="btn btn-text" aria-label="View source code for E-commerce Website">
+                                    <span aria-hidden="true">Code</span>
+                                    <span class="sr-only">View source code for E-commerce Website</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" role="listitem" aria-labelledby="project-2-title" itemscope itemtype="https://schema.org/CreativeWork" data-category="frontend">
+                        <meta itemprop="name" content="Task Management App">
+                        <meta itemprop="description" content="An intuitive task management application that helps users organize their daily activities with drag-and-drop functionality and team collaboration features.">
+                        <meta itemprop="dateCreated" content="2023">
+                        <meta itemprop="genre" content="Web Application">
+                        
+                        <figure class="project-image">
+                            <img 
+                                src="https://via.placeholder.com/600x400" 
+                                alt="Screenshot of Task Management App showing task board" 
+                                loading="lazy"
+                                width="600"
+                                height="400"
+                                itemprop="image"
+                            >
+                            <figcaption class="sr-only">Screenshot of Task Management App</figcaption>
+                        </figure>
+                        <div class="project-content">
+                            <h3 id="project-2-title" itemprop="name">Task Management App</h3>
+                            <p itemprop="description">An intuitive task management application that helps users organize their daily activities with drag-and-drop functionality and team collaboration features.</p>
+                            <div class="project-tags" role="list" aria-label="Technologies used">
+                                <span role="listitem" itemprop="keywords">Vue.js</span>
+                                <span role="listitem" itemprop="keywords">Firebase</span>
+                                <span role="listitem" itemprop="keywords">Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline" aria-label="View Task Management App project" itemprop="url">
+                                    <span>View Project</span>
+                                    <span class="sr-only">: Task Management App</span>
+                                </a>
+                                <a href="#" class="btn btn-text" aria-label="View source code for Task Management App">
+                                    <span aria-hidden="true">Code</span>
+                                    <span class="sr-only">View source code for Task Management App</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">My Skills</h2>
+                <p class="section-description" id="skills-description">Technologies and tools I work with to create amazing web experiences.</p>
+                
+                <div class="skills-container" role="region" aria-labelledby="skills-heading">
+                    <div class="skills-category" role="region" aria-labelledby="frontend-heading">
+                        <h3 id="frontend-heading">Frontend</h3>
+                        <ul class="skills-list" role="list">
+                            <li role="listitem">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <span class="skill-level" aria-label="Advanced level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★★★</span>
+                                </span>
+                            </li>
+                            <li role="listitem">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <span class="skill-level" aria-label="Advanced level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★★★</span>
+                                </span>
+                            </li>
+                            <li role="listitem">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-level" aria-label="Advanced level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★★☆</span>
+                                </span>
+                            </li>
+                            <li role="listitem">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-level" aria-label="Intermediate level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★☆☆</span>
+                                </span>
+                            </li>
+                            <li role="listitem">
+                                <span class="skill-name">Responsive Design</span>
+                                <span class="skill-level" aria-label="Advanced level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★★★</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category" role="region" aria-labelledby="backend-heading">
+                        <h3 id="backend-heading">Backend</h3>
+                        <ul class="skills-list" role="list">
+                            <li role="listitem">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level" aria-label="Advanced level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★★☆</span>
+                                </span>
+                            </li>
+                            <li role="listitem">
+                                <span class="skill-name">Express</span>
+                                <span class="skill-level" aria-label="Intermediate level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★☆☆</span>
+                                </span>
+                            </li>
+                            <li role="listitem">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level" aria-label="Intermediate level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★☆☆</span>
+                                </span>
+                            </li>
+                            <li role="listitem">
+                                <span class="skill-name">RESTful APIs</span>
+                                <span class="skill-level" aria-label="Advanced level">
+                                    <span class="sr-only">Skill level: </span>
+                                    <span aria-hidden="true">★★★★☆</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                <p class="section-description" id="contact-description">Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info" role="complementary" aria-labelledby="contact-info-heading">
+                        <h3 id="contact-info-heading">Let's Work Together</h3>
+                        <p>Feel free to reach out using the contact form or through my social media profiles. I'll get back to you as soon as possible.</p>
+                        
+                        <div class="contact-details" role="region" aria-label="Contact information">
+                            <div class="contact-method">
+                                <span class="contact-icon" aria-hidden="true">✉️</span>
+                                <a href="mailto:contact@example.com" aria-label="Email me at contact@example.com">
+                                    contact@example.com
+                                </a>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon" aria-hidden="true">📱</span>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links" role="region" aria-label="Social media links">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+                                <span class="sr-only">GitHub</span>
+                                <span aria-hidden="true">GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+                                <span class="sr-only">LinkedIn</span>
+                                <span aria-hidden="true">LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter profile">
+                                <span class="sr-only">Twitter</span>
+                                <span aria-hidden="true">Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form" action="#" method="POST" novalidate>
+                        <fieldset>
+                            <legend class="sr-only">Contact Form</legend>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required
+                                    aria-required="true"
+                                    autocomplete="name"
+                                    placeholder="Enter Karim Abdelrazek"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    aria-required="true"
+                                    autocomplete="email"
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required" aria-hidden="true">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    required
+                                    aria-required="true"
+                                    placeholder="What's this about?"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message <span class="required" aria-hidden="true">*</span></label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    required
+                                    aria-required="true"
+                                    placeholder="How can I help you?"
+                                ></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button 
+                                    type="submit" 
+                                    class="btn btn-primary"
+                                    aria-label="Send message"
+                                >
+                                    Send Message
+                                </button>
+                                <p class="form-note" aria-live="polite">All fields marked with <span class="required" aria-hidden="true">*</span> are required.</p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to top button -->
+    <a href="#main" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>&copy; <span id="current-year">2023</span> <span itemprop="copyrightHolder">Karim Abdelrazek</span>. All rights reserved.</p>
+                    <p class="footer-credits">
+                        <span>Built with ❤️ and semantic HTML</span>
+                        <span class="visually-hidden">, following web accessibility best practices</span>
+                    </p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <ul role="list">
+                        <li><a href="/privacy-policy" class="footer-link" itemprop="url">Privacy Policy</a></li>
+                        <li><a href="/accessibility" class="footer-link" itemprop="url">Accessibility Statement</a></li>
+                        <li><a href="/sitemap.xml" class="footer-link" itemprop="url">Sitemap</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-back-to-top">
+                    <a href="#main" class="back-to-top" aria-label="Back to top">
+                        <span aria-hidden="true">↑</span>
+                        <span class="sr-only">Back to top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Skip to main content link (hidden until focused) -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="test-and-debug.js" defer></script>
+    
+    <!-- AOS (Animate On Scroll) Library - Optional -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    
+    <script>
+        // Initialize AOS with reduced motion preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            
+            AOS.init({
+                duration: 600,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false,
+                disable: prefersReducedMotion ? true : false
+            });
+        });
+    </script>
+</body>
+</html>

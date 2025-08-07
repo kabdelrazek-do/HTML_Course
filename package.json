@@ -1,0 +1,29 @@
+{
+  "name": "accessible-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, accessible portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files \"**/*.css, **/*.html, **/*.js\"",
+    "test:a11y": "pa11y http://localhost:8000",
+    "test:html": "html-validate '**/*.html'
+  },
+  "keywords": [
+    "portfolio",
+    "accessibility",
+    "a11y",
+    "responsive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "html-validate": "^8.12.0",
+    "pa11y": "^6.2.3"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
+}
